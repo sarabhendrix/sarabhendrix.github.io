@@ -1,0 +1,33 @@
+/* Structure */
+body{
+    background-color: skyblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#content{
+    background-color: white;
+    padding: 10px;
+    margin: 20px auto;
+    width: 75%;
+    border-radius: 10px;
+}
+/* Navigation */
+#main-nav li{
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+#main-nav a{
+    text-decoration: none;
+    background-color: #517c8d;
+    color: white;
+    padding: 5px;
+}
+/* Typography */
+h1{
+    color: #446776;
+}
+h2{
+    color: #446776;
+}
+p{
+    color: #1b292f;
+}
