@@ -1,0 +1,17 @@
+Name: My website will be called newpage.com. 
+
+Description: Book lovers around the world love to share their current reads, list of books to be read, and other stats with their friends.
+However, the main website people use is outdated and clunky. In addition, people want to have a more quantitative analysis of their reading data.
+NewPage will become the newest platform for book lovers to track their reads and interact with others, with a cleaner, easy to use interface. We will
+keep all of the parts they love and none of the parts they don't.
+
+Pages: There are many pages we would love to include. Some examples include:
+    1. Home- the page where people can see commonly view parts of their profile, such as their current read and book goal, as well as what their friends are reading, rating and reviewing.
+    2. My Books- the place where people can organize the books they've read, want to read, and other self-determined categories of books, such as genre or style of reading.
+    3. Discussions- enter in your latest read and see what other people in the community think!
+    4. Analysis- here, users can see statistics on the types of books, ways they read, and length of their average book, among many other features.
+    5. Browse- users can look for new books based on what their friends recommend, others in the community love, or admins of the site determine are the most popular books.
+
+Stored Data: The main data we would be storing is information about the user's book collection and what books they want to read. The user can read, write and edit their books,
+but no one else should be able to change their bookshelves. However, if another user is friends with them, that user should be able to see any public bookshelves created by the user.
+In addition, the admins can create lists of book recommendations that should be viewable, but not editable by other users.
