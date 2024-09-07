@@ -1,0 +1,81 @@
+body{
+    font-family: "Berlingske Sans", "Arial", sans-serif;
+}
+#tools-nav li{
+    display: none;
+    list-style-type: none;
+    border-top: 1px solid #7f7f7f;
+}
+#main-nav ul{
+    list-style-type: none;
+    background-color: #000;
+    max-width: 100%;
+}
+#main-nav li{
+    padding: 15px 25% 15px 10px;
+}
+#main-nav a{
+    text-decoration: none;
+    color: #fff;
+}
+img{
+    max-width: 100%;
+}
+
+#garnet-section{
+    background-color: #73000A;
+}
+
+#garnet-item{
+    padding: 100px;
+}
+
+#colleges-and-schools-links{
+    display: flex;
+    flex-flow: column wrap;
+    height: 1200px;
+}
+
+#colleges-and-schools-links section{
+    flex-basis: 50%;
+}
+
+@media only screen and (max-width:600px){
+
+}
+
+@media only screen and (min-width:760px){
+    .columns{
+        display: flex;
+    }
+
+    .one{
+        flex: 1;
+    }
+
+    .two{
+        flex: 2;
+    }
+
+    .three{
+        flex: 3;
+    }
+
+    .four{
+        flex: 4;
+    }
+    #main-nav ul{
+        list-style-type: none;
+        justify-content: space-between;
+        background-color: #73000A;
+    }
+    #main-nav li{
+        flex: 1;
+        float: left;
+        margin: auto;
+        padding: 15px;
+    }
+    #colleges-and-schools-links{
+        flex-direction: row;
+    }
+}
