@@ -1,49 +1,343 @@
+/* Variables */
+:root{
+    --primary-color: #73000A;
+    --secondary-color: #000;
+    --tertiary-color: #fff;
+    --color-light-gray: #ececec;
+}
+/* Structure */
 body{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
     font-family: "Berlingske Sans", "Arial", sans-serif;
 }
-#tools-nav li{
-    display: none;
+a{
     list-style-type: none;
-    border-top: 1px solid #7f7f7f;
-}
-#main-nav ul{
-    list-style-type: none;
-    background-color: #000;
-    max-width: 100%;
-}
-#main-nav li{
-    padding: 15px 25% 15px 10px;
-}
-#main-nav a{
     text-decoration: none;
-    color: #fff;
+}
+#main-header{
+    background-color: var(--secondary-color);
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+#large-logo{
+    display: none;
+}
+#small-logo{
+    bottom: 0px;
+}
+#search-square{
+    position: absolute;
+    right: 15px;
+}
+#hamburger-menu{
+    position: absolute;
+    right: 70px
+}
+#search-bar{
+    display: none;
+}
+#davis-college{
+    position: relative;
+    top: -16px;
 }
 img{
     max-width: 100%;
 }
-
-#garnet-section{
-    background-color: #73000A;
+#gen-section{
+    background-color: var(--tertiary-color);
+    padding-bottom: 200px;
 }
+#gen-section h1{
+    display: inline;
+    padding: 10px;
+    position: relative;
+    left: 5px;
+}
+#gen-section strong{
+    display: block;
+    text-align: left;
+    position: relative;
+    top: 50px;
+    right: 120px;
+    width: 770px;
+    margin: auto;
+    width: 50%;
 
+}
+#gen-section p{
+    position: relative;
+    top: 100px;
+    left: 25px;
+    margin: auto;
+    width: 50%;
+    text-align: left;
+    padding-bottom: 4em;
+    word-wrap: break-word;
+}
+#garnet-section{
+    background-color: var(--primary-color);
+    padding-bottom: 0px;
+}
+#garnet-button{
+    background-color: var(--secondary-color);
+    display: inline-block;
+    padding: 10px;
+    border: 1.5px solid var(--tertiary-color);
+}
+#garnet-section img{
+    height: 100%;
+    width: 100%;
+}
 #garnet-item{
     padding: 100px;
 }
-
-#colleges-and-schools-links{
+#gray-section{
+    padding-top: 10px;
+    background-color: var(--color-light-gray);
+    padding-bottom: 50px;
+}
+#gray-section h2{
+    position: relative;
+    left: 50px;
+}
+#gray-button{
+    background-color: var(--primary-color);
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    left: 160px;
+}
+#payment img{
+    display: block;
+    margin: 0px 5px;
+}
+#payment h4{
+    position: relative;
+    left: 60px;
+}
+#payment #payment-text{
+    top: 10px;
+    left: 25px;
+}
+#black-section{
+    background-color: var(--secondary-color);
+    padding-bottom: 20px;
+}
+#black-section h1, #black-section p{
+    position: relative;
+    left: 20px;
+    padding-right: 30px;
+}
+#black-section img{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+#black-section #gray-button{
+    left: 20px;
+    border: 1px solid var(--tertiary-color);
+    text-align: center;
+}
+#logo-footer{
+    display: block;
+    max-width: 50%;
+    margin: auto;
+}
+#social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+#social-media img{
+    max-width: 35px;
+    margin-right: 10px;
+}
+#colleges-and-schools-links a{
+    line-height: 3px;
+}
+#links{
+    padding-bottom: 20px;
+}
+#main-footer #black-section{
+    padding-top: 10px;
+}
+/* Navigation */
+#tools-nav{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0px 25px;
+    text-align: right;
+    background-color: var(--secondary-color);
+}
+#tools-nav strong{
+    display: none;
+}
+#tools-nav li{
+    display: none;
+    list-style-type: none;
+    padding-right: 10px;
+}
+#extra-padding{
+    padding-right: 20px;
+}
+#main-nav ul{
+    list-style-type: none;
+    background-color: var(--secondary-color);
+    max-width: 100%;
+}
+#main-nav li{
+    position: relative;
+    padding: 15px 25% 15px 10px;
+    text-align: center;
+    flex-basis: auto;
+}
+#bottom-nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+.colleges-and-schools-links{
     display: flex;
     flex-flow: column wrap;
-    height: 1200px;
+    height: 375px;
 }
-
-#colleges-and-schools-links section{
+.colleges-and-schools-links section{
     flex-basis: 50%;
 }
-
-@media only screen and (max-width:600px){
-
+.offices-and-divisions-links{
+    display: flex;
+    flex-direction: row;
+    height: 375px;
 }
-
+.offices-and-divisions-links section{
+    flex-basis: 50%;
+}
+/* Typography */
+#tools-nav ul{
+    text-transform: uppercase;
+    font-size: 10px;
+}
+#tools-nav strong{
+    font-weight: 800;
+    color: var(--tertiary-color);
+}
+#tools-nav li{
+    color: var(--tertiary-color);
+}
+#tools-nav a{
+    color: var(--tertiary-color);
+}
+#main-nav a{
+    text-decoration: none;
+    color: var(--tertiary-color);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+#gen-section h1{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    line-height: 1.25em;
+    font-family: "Berlingske Sans Extracondensed", "Impact", sans-serif;
+    font-weight: 200;
+    font-size: clamp(37.5px, (7vw + 1rem), 76px);
+    letter-spacing: 1.6px;
+    position: relative;
+    left: 10px;
+}
+#gen-section strong{
+    font-size: 20px;
+    width: 100%;
+    text-align: left;
+    top: 50px;
+    left: 20px;
+    line-height: 2;
+    margin: 5px;
+}
+#gen-section p{
+    position: relative;
+    top: 100px;
+    left: 10px;
+    margin: auto;
+    width: 50%;
+    text-align: left;
+    padding-bottom: 4em;
+    padding-right: 5px;
+    width: 500px;
+    line-height: 2;
+}
+#garnet-section h2{
+    color: var(--tertiary-color);
+    font-size: 40px;
+}
+#garnet-section p{
+    color: var(--tertiary-color);
+    line-height: 1.75;
+}
+#garnet-button{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#gray-section h2{
+    color: var(--primary-color);
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;  
+}
+#gray-section p{
+    text-align: center;
+    padding: 0px 50px;
+    line-height: 2;
+}
+#gray-button{
+    color: var(--tertiary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#gen-section h3{
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 30px;
+}
+#gen-section h6{
+    font-weight: normal;
+    text-align: center;
+    font-size: 16px;
+    padding: 0px 30px;
+    line-height: 2;
+}
+#payment h4{
+    color: var(--primary-color);
+}
+#black-section h1, #black-section p{
+    color: var(--tertiary-color);
+}
+#black-section p{
+    line-height: 2;
+}
+#links h4{
+    color: var(--tertiary-color);
+    padding-left: 20px;
+}
+#links li{
+    list-style-type: none;
+    color: var(--tertiary-color);
+}
+#main-footer a{
+    color: var(--tertiary-color);
+    padding-left: 0px;
+    position: relative;
+    right: 20px;
+}
+#bottom-nav{
+    text-align: center;
+    line-height: 2;
+}
+/* Media Queries for Large Screens */
 @media only screen and (min-width:760px){
     .columns{
         display: flex;
@@ -64,10 +358,33 @@ img{
     .four{
         flex: 4;
     }
+    #tools-nav strong{
+        display: block;
+    }
+    #tools-nav li{
+        display: block;
+    }
+    #large-logo{
+        display: block;
+        padding-left: 50px;
+        padding-top: 28px;
+    }
+    #small-logo{
+        display: none;
+    }
+    #search-square{
+        display: none;
+    }
+    #hamburger-menu{
+        display: none;
+    }
+    #search-bar{
+        display: block;
+    }
     #main-nav ul{
         list-style-type: none;
         justify-content: space-between;
-        background-color: #73000A;
+        background-color: var(--primary-color);
     }
     #main-nav li{
         flex: 1;
@@ -75,7 +392,92 @@ img{
         margin: auto;
         padding: 15px;
     }
-    #colleges-and-schools-links{
-        flex-direction: row;
+    #gen-section h1{
+        display: inline;
+        background-color: var(--primary-color);
+        padding: 10px;
+        position: relative;
+        left: 100px;
+        color: var(--tertiary-color);
+    }
+    #gen-section strong{
+        display: block;
+        text-align: left;
+        position: relative;
+        top: 50px;
+        left: 65px;
+        width: 600px;
+        margin: auto;
+        width: 50%;
+    }
+    #gen-section p{
+        position: relative;
+        top: 100px;
+        margin: auto;
+        width: 50%;
+        text-align: left;
+        padding-bottom: 4em;
+        width: 600px;
+        line-height: 2;
+    }
+    #logo-footer{
+        margin-left: 0;
+        width: 100%;
+    }
+    #social-media{
+        justify-content: right;
+    }
+    #colleges-and-schools {
+        position: relative;
+        width: 50%;
+    }
+    .colleges-and-schools-links{
+        flex-flow: row nowrap;
+    }
+    #offices-and-divisions{
+        position: relative;
+        width: 33%;
+    }
+    #tools{
+        position: relative;
+        width: 17%;
+    }
+    #links{
+        flex-flow: row wrap;
+    }
+    #main-footer #black-section ul{
+        margin-left: 150px;
+        width: 95%;
+    }
+    #payment{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        padding-left: 25px;
+    }
+    #payment section{
+        flex: 1 1 24%;
+        max-width: 24%;
+        box-sizing: border-box;
+    }
+    #payment img{
+        width: 100%; 
+        height: auto;
+    }
+    #payment-text{
+        max-width: 269px;
+    }
+    #gen-section h3{
+        font-size: 50px;
+    }
+    #gray-section h2{
+        text-align: center;
+    }
+    #gray-button{
+        left: 600px;
+    }
+    #intro-p{
+        position: relative;
+        right: 20px;
     }
 }
