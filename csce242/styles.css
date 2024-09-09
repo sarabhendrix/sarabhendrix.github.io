@@ -19,6 +19,10 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
+#items a{
+    color: #fff;
+    text-decoration: none;
+}
 /* Navigation */
 #main-nav ul{
     padding-left: 0;
@@ -54,6 +58,7 @@ p{
 @media only screen and (min-width:600px){
     .columns{
         display: flex;
+        flex-wrap: wrap;
     }
 
     .one{
@@ -74,6 +79,9 @@ p{
 
     #main-nav li{
         flex: 1;
+    }
+    #content{
+        flex-direction: column;
     }
 }
 
