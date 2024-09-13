@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Intro to Javascript</title>
+    </head>
+    <body>
+        <h1>Assignment 5</h1>
+        <h3>Introduction to Javascript</h3>
+        <section id="content" class="three">
+            <div class="columns">
+                <section id="count">
+                    <p><button id="counter" onclick="countUp()">0</button></p>
+                </section>
+                <section id="rand-image">
+                    <img id="random image" onclick="refreshPage()" src="https://picsum.photos/420" alt="random image">
+                </section>
+                <section id="slider">
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                    <div id="container">
+                        <div id="square"></div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <footer id="main-footer">
+            <p>sarabhendrix.com</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
