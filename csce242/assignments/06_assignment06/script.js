@@ -9,8 +9,7 @@ const img = document.getElementById('random-image');
 
 toggle.addEventListener('click', () => {
     menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-    arrow.innerHTML = menu.style.display === 'block' ? '&#8593;' : '&#8595;'; // Up or down arrow
-    console.log("ran");
+    arrow.innerHTML = menu.style.display === 'block' ? '&#8593;' : '&#8595;'; 
 });
 
 document.getElementById("exercise-1").onclick = (event) => {
