@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Intro to Javascript</title>
+    </head>
+    <body>
+        <header>
+            <h1>Assignment 6</h1>
+            <h3>If Statements</h3>
+            <nav id="main-nav">
+                <div id="toggle-menu">
+                    <span id="arrow">&#8595;</span>
+                </div>
+                <ul id="nav-items" class="columns hidden-small">
+                    <li><a id="exercise-1" href="#">Exercise 1</a></li>
+                    <li><a id="exercise-2" href="#">Exercise 2</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="exercise-1-sect">
+            <h3>Color Slider</h3>
+            <div class="slidecontainer">
+                <input type="range" min="0" max="255" value="0" class="slider" id="color-slider">
+            </div>
+            <p id="message">Darkness</p>
+        </section>
+        <section id="exercise-2-sect">
+            <h3>Picture Chooser</h3>
+            <div id="buttons">
+                <button onclick="showImage('small')">Small</button>
+                <button onclick="showImage('medium')">Medium</button>
+                <button onclick="showImage('large')">Large</button>
+            </div>
+            <div id="image-container">
+                <img id="random-image" src="" alt="random image here">
+            </div>
+        </section>
+        <footer id="main-footer">
+            <p>sarabhendrix.com</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
