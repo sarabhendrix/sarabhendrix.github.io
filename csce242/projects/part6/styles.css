@@ -66,8 +66,7 @@ body {
     margin-bottom: 50px;
 }
 #small-book img{
-    height: 333px;
-    width: auto;
+    width: 237px;
 }
 #filter{
     width: 50px;
@@ -84,7 +83,7 @@ body {
     justify-content: space-between;
     margin-bottom: 50px;
 }
-#results{
+#results, #results-larger{
     display: flex;
     flex: 2;
     flex-wrap: wrap;
@@ -199,7 +198,7 @@ h5 {
         display: flex;
         flex-wrap: nowrap;
     }
-    #results section{
+    #results section, #results-larger section{
         flex: 0 0 33.3333%;
     }
     #results section img{
@@ -208,7 +207,12 @@ h5 {
         margin-right: auto;
         width: 50%;
     }
-    #results section h5{
+    #results-larger section img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #results section h5, #results-larger section h5{
         text-align: center;
     }
     #discussion{
