@@ -53,6 +53,10 @@ p{
     color: #1b292f;
     text-align: center;
 }
+#items .p-link{
+    color: #1b292f;
+    text-align: center;
+}
 
 /* Media Queries */
 @media only screen and (min-width:600px){
