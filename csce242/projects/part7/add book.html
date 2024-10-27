@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>NewPage</title>
+    </head>
+    <body>
+        <header id="main-header">
+            <h1>NewPage</h1>
+            <nav id="main-nav">
+                <div id="toggle-menu">
+                    <span id="arrow">&#8595;</span>
+                </div>
+                <ul id="nav-items" class="columns hidden-small">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mybooks.html">My Books</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="discussion.html">Discussion</a></li>
+                    <li><a href="analytics.html">Analytics</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form id="add-book">
+            <p>
+                <label for="title">Title</label>
+                <input
+                    type="text"
+                    id="title"
+                    name="title"
+                    required
+                    minlength="3"
+                />
+            </p>
+            <p>
+                <label for="description">Description</label>
+                <input
+                    type="text"
+                    id="description"
+                    name="description"
+                    required
+                    minlength="10"
+                />
+            </p>
+            <p>
+                <label for="genre">Genre</label>
+                <select name="genre" id="genre">
+                    <option value="Mythology">Mythology</option>
+                    <option value="Literary Fiction">Literary Fiction</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Other">Other</option>
+                </select>
+            </p>
+            <p>
+                <label for="avg-rating">Average Rating</label>
+                <input
+                    type="number"
+                    name="avg-rating"
+                    id="avg-rating"
+                    required
+                />
+            </p>
+            <p>
+                <button type="submit">Add</button>
+            </p>
+        </form>
+        <section id="submit-message" class="hidden">
+            <h4>Results</h4>
+            <p>
+              Your book information has been added to the system, someone will review your request shortly.
+            </p>
+          </section>
+        <footer id="main-footer">
+            <p>&copy; NewPage</p>
+        </footer>
+        <script src="add-book.js"></script>
+    </body>
+</html>
