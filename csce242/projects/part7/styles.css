@@ -119,9 +119,7 @@ body {
     display: flex;
     justify-content: center;
 }
-#reply{
-    max-width: 100%;
-}
+
 #review {
     background-color: var(--section-color);
     width: 500px;
@@ -156,11 +154,6 @@ body {
 #review p {
     margin-top: 10px; 
     color: var(--primary-text-color); 
-}
-
-#search-input{
-    width: 400px;
-    height: 50px;
 }
 
 /* Typography */
